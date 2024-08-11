@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator and Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@zxing/library@0.18.4/dist/zxing.min.js"></script>
+</head>
+<body>
+    <h1>QR Code Generator and Scanner</h1>
+    <div class="container">
+        <div class="generator">
+            <h2>Generate QR Code</h2>
+            <input type="text" id="qr-input" placeholder="Enter text to generate QR code">
+            <button id="generate-btn">Generate QR Code</button>
+            <div id="qr-code-container">
+                <img id="qr-code" src="" alt="QR Code">
+            </div>
+        </div>
+        <div class="scanner">
+            <h2>Scan QR Code</h2>
+            <video id="video" width="400" height="300"></video>
+            <button id="scan-btn">Scan QR Code</button>
+            <div id="scan-result-container">
+                <p id="scan-result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
